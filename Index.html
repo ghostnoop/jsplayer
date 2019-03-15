@@ -4,17 +4,71 @@
     <script src="app.js"></script>
     <title>Тестовая страница</title>
     <style>
+    	body {
+    		background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png);
+    	}
+div{
+	position: relative;
+}
+a{
+	position: relative;
+	margin-right: 30px;
+	margin: 20px;
+
+	top: 20px;
+	left: 20px;
+}
+input{position: relative;
+	margin: 20px;}
+
+
+
+
 		.vk{
 			height: 50px;
 
 		}
+		button.ipp{
+position: relative;
+	margin-left: : 30px;
+
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  /*margin: 10px 20px;*/
+  padding: 15px 30px;
+  overflow: hidden;
+  border: 2px solid;
+  border-bottom-width: 4px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgba(30,255,188,1);
+  background: rgba(255,255,255,1);
+  transition: color .3s, background .5s;
+}
+button.ipp:hover{
+	animation: stripes .75s infinite linear;
+  background: linear-gradient(45deg, rgba(30,255,188,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 50%, rgba(30,255,188,1) 50%,      rgba(30,255,188,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1));
+  background-size: 10px 10px;
+  color: #FF50E5;
+}
+@keyframes stripes {
+  0% {background-position: 0 0;}
+  100% {background-position: 50px 0;}
+}
+
+
 	</style>
 </head>
 <body>
-<a href="https://vk.com/" >
+	<div>
+<a href="https://vk.com/">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/1200px-VK.com-logo.svg.png" class="vk"></a>
 
 <input  id="name" value="" placeholder="Впишите">
-<button onclick="printSomething()">Вывод</button>
+<button onclick="printSomething()" class="ipp">Вывод</button>
+</div>
 </body>
 </html>

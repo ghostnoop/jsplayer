@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>корупция</title>
+
+<style type="text/css">
+	
+td{
+	width: 150px;
+	height: 150px;
+	background-color: red;
+}
+table button{width: 150px;
+	height: 150px;
+	background-color: blue;}
+
+
+button.bbe{
+width: 200px;
+height: 60px;
+
+ text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #F137A6 inset, 0 0 0 0 #F137A6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  transition: .15s ease-in-out;
+
+
+
+}
+
+
+button.bbe:hover {
+  box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
+  color: #F137A6;
+}
+
+
+td.bbf{
+	background-color: white;
+}
+</style>
+
+</head>
+<body onload="rand()" >
+
+
+
+<h1 style=" margin-left: 30%; margin-top: 0%;">
+<div id="fir"> ИМЯ</div>
+</h1>
+<script>
+	var name = prompt("Какое ваше имя?");
+
+var el = document.getElementById('fir');
+if (typeof el.innerText !== 'undefined') {
+    // IE8-
+    el.innerText = name;
+} else {
+    // Нормальные браузеры
+    el.textContent = name;
+}
+</script>
+
+
+<script>
+function func() {
+  ///////////
+  document.getElementById("bbbbe").disabled=false;
+}
+
+setTimeout(func, 3000);
+</script>
+
+
+<script>
+	function getImages(){
+		// alert("G");
+  for( var image, array = [], i = 1; i <= 9; i++ ){
+    image = new Image;
+    image.src = "images/" + i + ".jpg";
+    array.push( image );
+  };
+  return array;
+};
+
+
+
+
+		var images=[]
+
+	function rand(){
+			document.getElementById("bbbbe").disabled=true;
+		var i = 1;
+
+
+	while (i < 10) {
+  		var fue =Math.floor(Math.random() * (10 - 1)) + 1;
+  		var imageUrl = getImages;
+  		var id = 's' + i
+  		// alert(fue);
+  		// alert(imageUrl[i]);
+  		var esli = "url(images/" + fue + ".jpg)";
+  		document.getElementById(id).style.backgroundImage=esli;
+  		// "url(images/1.jpg)"
+
+  		i++;
+}
+
+	
+
+	}
+
+	
+
+
+</script>
+
+<script >
+	function sume(){
+		
+			var slov = ["ВЫ воруете", "ВЫ честный человек"];
+			// alert(slov[0]);
+			var ii = Math.floor(Math.random() * (2 - 0)) + 0;
+			var name = slov[ii];
+			// alert(name);
+
+			var el = document.getElementById('chec');
+			if (typeof el.innerText !== 'undefined') {
+   //  // IE8-
+   			 el.innerText = name;
+				} else {
+   //  // Нормальные браузеры
+   			 el.textContent = name;
+			}
+
+			document.getElementById("bbbbe").disabled=true;
+
+
+	}
+
+
+</script>
+
+
+
+<h1>Выберите </h1>
+<h2 style="margin-left: 10%;">ценное</h2>
+<h3 style="margin-left: 20%;"> для вас</h3>
+<table id="bb2">
+	<tr>
+
+	
+
+		<td >
+			<button id="s1"></button>
+		</td>
+		<td >
+			<button id="s2"></button>
+		</td>
+		<td >
+			<button id="s3"></button>
+		</td>
+
+		<td width="50px;" style="background-color: white;"></td>
+		<td style="background-color: white;">
+			<h1><div style="width: 100px; height: 100px;" id="chec">
+				
+					
+
+				
+
+			</div></h1>
+
+		</td>
+
+	</tr>
+
+	<tr>
+		<td >
+			<button id="s4"></button>
+		</td>
+		<td  >
+			<button id="s5"></button>
+		</td>
+		<td  >
+			<button id="s6"></button>
+		</td>
+
+	</tr>
+
+	<tr>
+		<td >
+			<button id="s7"></button>
+		</td>
+		<td  >
+			<button id="s8"></button>
+		</td>
+		<td >
+			<button id="s9"></button>
+		</td>
+
+
+		<td class="bbf">
+			
+<button style="margin-left: 25%; " class="bbe" id="bbbbe" onclick="sume()">отправить</button>
+
+
+
+		</td>
+
+
+
+
+	
+
+</tr>
+	
+
+
+
+
+</table>
+
+
+
+</body>
+</html>
